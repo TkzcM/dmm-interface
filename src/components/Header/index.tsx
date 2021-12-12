@@ -298,6 +298,8 @@ const getPoolsMenuLink = (chainId?: ChainId) => {
       return `/pools/CRO`
     case ChainId.CRONOS:
       return `/pools/CRO`
+    case ChainId.AURORA:
+      return `/pools/ETH`
     default:
       return '/pools/ETH'
   }
@@ -317,6 +319,7 @@ export default function Header() {
     if ([ChainId.FANTOM].includes(chainId)) return 'https://multichain.xyz'
     if ([ChainId.CRONOSTESTNET, ChainId.CRONOS].includes(chainId))
       return 'https://cronos.crypto.org/docs/bridge/cdcapp.html'
+    if ([ChainId.AURORA].includes(chainId)) return 'https://rainbowbridge.app'
     return ''
   }
 
@@ -414,6 +417,8 @@ export default function Header() {
                   ? `FTM`
                   : chainId && [25, 338].includes(chainId)
                   ? `CRO`
+                  : chainId && [1313161554].includes(chainId)
+                  ? `ETH`
                   : `ETH`}
               </BalanceText>
             ) : null}
