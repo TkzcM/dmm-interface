@@ -8,21 +8,24 @@ export const AURORA_TOKEN_LIST = {
       address: '0xB12BFcA5A55806AaF64E99521918A4bf0fC40802',
       symbol: 'USDC',
       name: 'USDC',
-      decimals: 6
+      decimals: 6,
+      logoURI: 'https://raw.githubusercontent.com/aurora-is-near/bridge-assets/master/tokens/usdc.svg'
     },
     {
       chainId: 1313161554,
       address: '0x4988a896b1227218e4A686fdE5EabdcAbd91571f',
       symbol: 'USDT',
       name: 'USDT',
-      decimals: 6
+      decimals: 6,
+      logoURI: 'https://raw.githubusercontent.com/aurora-is-near/bridge-assets/master/tokens/usdt.svg'
     },
     {
       chainId: 1313161554,
       address: '0xe3520349F477A5F6EB06107066048508498A291b',
       symbol: 'DAI',
       name: 'DAI',
-      decimals: 18
+      decimals: 18,
+      logoURI: 'https://raw.githubusercontent.com/aurora-is-near/bridge-assets/master/tokens/dai.svg'
     },
     {
       chainId: 1313161554,
