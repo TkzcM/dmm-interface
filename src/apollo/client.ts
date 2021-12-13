@@ -78,7 +78,7 @@ const cronosExchangeClient: ApolloClient<NormalizedCacheObject> = new ApolloClie
 })
 
 const auroraExchangeClient: ApolloClient<NormalizedCacheObject> = new ApolloClient({
-  uri: '',
+  uri: 'https://api.thegraph.com/subgraphs/name/piavgh/dmm-exchange-aurora',
   cache: new InMemoryCache()
 })
 
@@ -154,7 +154,7 @@ const cronosBlockClient = new ApolloClient({
 })
 
 const auroraBlockClient = new ApolloClient({
-  uri: '',
+  uri: 'https://api.thegraph.com/subgraphs/name/dynamic-amm/ethereum-blocks-aurora',
   cache: new InMemoryCache()
 })
 
