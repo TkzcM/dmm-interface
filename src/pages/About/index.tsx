@@ -13,6 +13,8 @@ import {
   Fantom,
   Cronos,
   CronosLogoFull,
+  Aurora,
+  AuroraFull,
   BestPrice,
   LowestSlippage,
   FarmIcon,
@@ -290,6 +292,7 @@ function About() {
             <Avalanche />
             <Fantom />
             <Cronos />
+            <Aurora />
           </SupportedChain>
 
           <Flex
@@ -455,7 +458,7 @@ function About() {
 
                     <Flex flexDirection="column" alignItems="center" flex={!above992 ? 1 : 'unset'}>
                       <Text fontWeight="600" fontSize="24px">
-                        28+
+                        31+
                       </Text>
                       <Text color={theme.subText} marginTop="4px" fontSize="14px">
                         <Trans>DEXs</Trans>
@@ -787,9 +790,13 @@ function About() {
                 </Flex>
               </Flex>
 
-              <Flex flex={0.5} justifyContent="center" alignItems="center" sx={{ gap: '52px' }}>
+              <Flex flex={1} justifyContent="center" alignItems="center" sx={{ gap: '52px' }}>
                 <Flex flex={1} alignItems="center">
                   <CronosLogoFull color={isDarkMode ? undefined : '#142564'} />
+                </Flex>
+
+                <Flex flex={1} alignItems="center">
+                  <AuroraFull />
                 </Flex>
               </Flex>
             </Powered>
