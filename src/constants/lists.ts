@@ -102,10 +102,10 @@ export const LIST_OF_LISTS: Map<ChainId, string[]> = new Map([
   [ChainId.FANTOM, []],
   [ChainId.CRONOS, []],
   [ChainId.CRONOSTESTNET, []],
-  [ChainId.AURORA, [AURORA]]
+  [ChainId.AURORA, []]
 ])
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS = LIST_OF_LISTS.get(ChainId.AURORA) || []
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = []
 
 export const HIDE_LIST = [COINGECKO]
